@@ -1,0 +1,113 @@
+main {
+  width: 100vw;
+  height: 100vh;
+
+  background: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 40%;
+  height: 60%;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.32);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: #ffffff;
+  }
+
+  h3 {
+    color: #ffffff;
+    margin-bottom: 100px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 15vw;
+    gap: 10px;
+    li {
+      background: #fff;
+      color: #000;
+      border: 1px solid transparent;
+      border-radius: 25px;
+      padding: 10px 40px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border-radius: 20px;
+          position: absolute;
+          background: transparent;
+          border: 1px solid #ffffff;
+          left: 4%;
+        }
+      }
+    }
+  }
+}
+
+.Acertos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 40%;
+  height: 60%;
+  background: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 10vw;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 32px;
+    width: 10vw;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
